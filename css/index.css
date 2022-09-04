@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2vw 4vw;
+}
+
+.nav-items {
+  display: flex;
+}
+
+.nav-item {
+  margin-left: 3vw;
+  font-size: 1.2rem;
+  font-family: "Roboto",sans-serif;
+  color: #524e4e;
+  font-weight: 400;
+}
+
+.active-item {
+    color: #FE5E35;
+    font-weight: 700;
+}
+
+.icons {
+  width: 300px;
+}
+
+.menu{
+    display: none;
+}
+
+/* ///// main/////////////////////////////////////////////// */
+
+/* /////////////left/// */
+
+.intro-section {
+  display: flex;
+  padding: 2vw 4vw;
+}
+
+.left-section{
+    width: 50vw;
+}
+
+.left-section h3 {
+    font-family: "Roboto",sans-serif;
+    font-weight: 500;
+   font-size: 2rem;
+   padding: 2vh 0;
+}
+
+.left-section h3 img {
+    width: 50px;
+    margin-left: 1vw;
+}
+
+.left-section h1 {
+    font-family: 'Fredoka One', cursive;
+    font-size: 4rem;
+     margin-bottom: 3vh;
+
+}
+
+.sub-headlines {
+    margin-left: 4.5vw;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5vh;
+
+}
+
+.sub-headlines h5 {
+   font-size: 1.5rem;
+   margin: 1vh 0;
+   font-family: "Roboto",sans-serif;
+   font-weight: 400;
+}
+
+.sub-headlines img {
+    background-color:#FE5E35;
+    border-radius: 50px;
+    margin-right: 1vw;
+}
+
+.text {
+    font-family: "Roboto",sans-serif;
+    color: #7b7272;
+    font-weight: 300;
+    font-size: .8rem;
+    line-height: 1.5em;
+    margin-bottom: 5vh;
+}
+
+.action-btn {
+    background-color: #FE5E35;
+    color: white;padding: 1em 2em ;
+    border-radius: 30px;
+    border: none;
+    margin: 1em;
+    font-size: 1rem;
+
+}
+
+/* /////////////Right///////////// */
+
+
+.right-section {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 50vw;
+    align-items: center;
+
+}
+
+.headphone{
+    width: 50vw;
+ 
+}
+
+
+.discount  {
+  width: 150px; 
+position: absolute;
+left: 10px;
+top: 300px;
+}
+
+.discount-content {
+    position: absolute;
+    left: 50px;
+top: 350px;
+color: white;
+
+}
+
+.discount-content h4{
+    font-size: .8rem;
+}
+
+.discount-content h1{
+    font-size: 2.8rem;
+}
+
+/* ////////////////////// */
+.dots {
+    display: flex;
+}
+
+.yellow-dot{
+    background-color: rgb(210, 216, 36);
+}
+.tomato-dot{
+    background-color: #FE5E35;
+}
+.black-dot {
+    background-color: black;
+}
+
+.dot{
+    border-radius: 50px;
+    width: 30px;
+    height: 30px;
+    margin: 1em;
+    
+}
+
+
+/* /////////////////Rsponsive///////////////// */
+
+@media (max-width: 767px){
+
+    /* nav */
+    .nav-items{
+        display: none;
+    }
+    .icons{
+        display: none;
+    }
+
+    .menu{
+        display: block;
+    }
+    .right-section{
+        order: -1;
+    }
+
+    .left-section{
+       display: flex;
+       flex-direction: column;
+       align-items: center;  
+
+    }
+    .intro-section {
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .headphone-div{
+        align-items: center;
+        
+    }
+    .discount  {
+        width: 120px; 
+      position: absolute;
+      left: 50vw;
+      top: 0;
+      
+      }
+      .discount-content {
+        position: absolute;
+        left: 55vw;
+        top: 35px;
+         color: white;
+    }
+    .discount-content h4{
+        font-size: .7rem;
+    }
+    
+    .discount-content h1{
+        font-size: 2rem;
+    }
+
+}
